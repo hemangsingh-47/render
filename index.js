@@ -102,11 +102,12 @@
 
 
 const express = require("express");
-
+const cors=require('cors')
 const app = express();
 
 // middleware to read JSON body
 app.use(express.json());
+app.use(cors());
 
 const users = [
  {att:'80', UID:108243,total_sub:14,bonus:'20',name:'Dax'},
